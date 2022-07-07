@@ -7,6 +7,6 @@ JOIN genre
 ON (movie_genre.genre_id = genre.id)
 WHERE movie.director_id = (
     SELECT id from director
-    WHERE name = 'Ryer'
+    WHERE name = 'Kaliyah'
 )
 GROUP BY genre.name;
