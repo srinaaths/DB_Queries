@@ -28,4 +28,4 @@ where movie_genre.genre_id = (
     WHERE name = 'Horror'
 ) and movie.release_year = 2005
 GROUP BY movie.name, movie.release_year
-order by AVG(rating.rating) DESC
+order by AVG(rating.rating) DESC;
