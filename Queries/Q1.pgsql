@@ -6,4 +6,5 @@ on movie.id = movie_genre.movie_id
 where genre_id = (
     select id from genre
     where name = 'Horror'
-) and movie.release_year = 2010;
+) 
+ORDER by movie.release_year DESC;
