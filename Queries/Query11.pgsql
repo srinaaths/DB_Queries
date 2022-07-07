@@ -3,5 +3,5 @@ JOIN director
 on (movie.director_id = director.id)
 where movie.director_id = (
     SELECT id from director
-    where name = 'Ryer'
+    where name = 'Liza'
 )
