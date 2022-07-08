@@ -26,6 +26,6 @@ on (movie.id = rating.movie_id)
 where movie_genre.genre_id = (
     SELECT id from genre
     WHERE name = 'Horror'
-) and movie.release_year = 2005
+) and movie.release_year = 2010
 GROUP BY movie.name, movie.release_year
 order by AVG(rating.rating) DESC;
